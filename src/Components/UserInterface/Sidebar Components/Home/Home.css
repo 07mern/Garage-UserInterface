@@ -1,0 +1,238 @@
+.home-container {
+    font-family: anta;
+    
+  }
+  .welcome-section {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url('../../../../assets/antique-car-4804725_1920.jpg'); 
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    overflow: hidden;
+    
+  }
+  .welcome-section h1{
+    font-family: zen dots;
+  }
+  .welcome-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.64); 
+    z-index: -1;
+  }
+  
+  .welcome-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f8f8f8;
+  }
+  .welcome-text p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  .btn-explore {
+    background-color: #FF9933;
+    color: #ffffff;
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-explore:hover {
+    background-color: #e68a00;
+  }
+  .garages-list {
+    padding: 50px 20px;
+ }
+ .garages-list h2{
+    margin-bottom: 40px;
+ }
+  
+  .garage-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+    max-height: 1000px;
+  }
+  .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card-body .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .card.shadow-0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .card-body .col-md-12.col-lg-3.col-xl-3 {
+    max-width: 22%;
+    min-width: 150px;
+  }
+  .card-body .col-md-6.col-lg-3.col-xl-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px; 
+    gap: 8px;
+  }
+  .card-body .col-md-6.col-lg-6.col-xl-6 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-body img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-body img:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-body .description {
+    height: 60px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: normal; 
+    word-wrap: break-word; 
+    margin-bottom: 10px;
+    line-height: 1.7; 
+  }
+  .card-body h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-body .d-flex {
+    align-items: center;
+  }
+  
+  .card-body .fa-star {
+    color: #ffcc00;
+  }
+  
+  .card-body .text-muted {
+    font-size: 0.85rem;
+    color: #777;
+  }
+  .card-body .btn-primary{
+    background-color: #FF9933;
+    border-color: #FF9933;
+    color: white;
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+  
+  }
+  .card-body .btn-wishlist {
+    background-color: #ffffff;
+    border: 1px solid #FF9933;
+    color: #FF9933;
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-body .btn-primary:hover {
+    background-color: #e68a00;
+  }
+  .card-body .btn-wishlist:hover {
+    background-color: #FF9933;
+    color: #ffffff;
+  }
+  .card-body .btn-outline-primary {
+    border-color: #FF9933;
+    color: #FF9933;
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-body .btn-outline-primary:hover {
+    background-color: #FF9933;
+    color: white;
+  }
+  
+  /* Filter Section */
+  .filter-section {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .filter-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+  }
+  .filter-select {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+  }
+  
+  .filter-select:focus {
+    outline: none;
+    border-color: #FF9933;
+  }
+  
+  .btn-filter {
+    background-color: #FF9933;
+    color: white;
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-filter:hover {
+    background-color: #e68a00;
+  }        
